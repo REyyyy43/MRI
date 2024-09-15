@@ -1,0 +1,58 @@
+/* SECCION HERO */
+#hero-content {
+    height: calc(55vh - 2rem);
+    background-image: url(/images/barquisimeto.jpg);
+    background-size: cover;
+}
+
+#textos {
+ color: #4e4e4e;
+}
+
+#shadow1, #shadow2 {
+    -webkit-box-shadow: -14px 10px 11px 2px rgba(0,0,0,0.28);
+    -moz-box-shadow: -14px 10px 11px 2px rgba(0,0,0,0.28);
+    box-shadow: -14px 10px 11px 2px rgba(0,0,0,0.28); 
+}
+
+.swiper-container {
+    width: 50%;
+    height: 100%;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+nav ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    border-top: 2px solid #0066ff;
+    box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.1);
+    background: #006262;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    margin-top: 1rem;
+    transition: opacity 300ms ease, transform 300ms ease;
+    transform: translateY(20px); /* Adjusted to 20px for smoother animation */
+    z-index: 1000;
+}
+
+nav ul li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+nav ul li ul li a {
+    padding: 9px 20px;
+    display: block;
+    margin: 0;
+    color: #ffffff;
+}
+
+nav ul li ul li a:hover {
+    background: #006262;
+}

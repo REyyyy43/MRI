@@ -1,0 +1,40 @@
+/* SECCION HERO */
+#img {
+    height: calc(75vh - 2rem);
+    background-image: url(/images/Misionvisionfondo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+nav ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    border-top: 2px solid #0066ff;
+    box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.1);
+    background: #006262;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    margin-top: 1rem;
+    transition: opacity 300ms ease, transform 300ms ease;
+    transform: translateY(20px); /* Adjusted to 20px for smoother animation */
+    z-index: 1000;
+}
+
+nav ul li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+nav ul li ul li a {
+    padding: 9px 20px;
+    display: block;
+    margin: 0;
+    color: #ffffff;
+}
+
+nav ul li ul li a:hover {
+    background: #006262;
+}
